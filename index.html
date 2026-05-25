@@ -2,152 +2,317 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CV Template</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="w3-light-grey">
+<body>
 
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <div class="page-container">
 
-        <!-- The Grid -->
-        <div class="w3-row-padding">
+        <div class="resume-grid">
 
-            <!-- Left Column -->
-            <div class="w3-third">
+            <!-- LEFT SIDE -->
+            <aside class="left-column">
 
-                <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
-                        <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar" />
-                        <div class="w3-display-bottomleft w3-container w3-text-black">
-                            <h2>Jane Doe</h2>
+                <div class="profile-card">
+
+                    <div class="image-container">
+                        <img src="images/image.jpeg" alt="Profile Avatar" class="profile-img">
+
+                        <div class="name-overlay">
+                            <h2>Ange Marquise</h2>
                         </div>
                     </div>
-                    <div class="w3-container">
-                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+00 151515</p>
-                        <hr />
 
-                        <p class="w3-large w3-text-theme"><b><i
-                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-                        <p>Adobe Photoshop</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-                        </div>
-                        <p>Photography</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-                        </div>
-                        <p>Illustrator</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-                        </div>
-                        <p>Media</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-                        </div>
-                        <br />
+                    <div class="profile-details">
 
-                        <p class="w3-large w3-text-theme"><b><i
-                                    class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-                        <p>English</p>
-                        <p>Spanish</p>
-                        <p>German</p>
-                        <br />
-                    </div>
-                </div>
-                <br />
-
-            </div>u <!-- End Left Column -->
-
-            <!-- Right Column -->
-            <div class="w3-twothird">
-
-                <!-- Work Experience -->
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16">
-                        <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
-                    </h2>
-
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span
-                                class="w3-tag w3-teal w3-round">Current</span></h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium magnam consectetur vel
-                            in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde
-                            doloremque repellendus iure.</p>
-                        <hr />
-                    </div>
-
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014
-                        </h6>
-                        <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est
-                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure.
+                        <p>
+                            <i class="fa fa-briefcase detail-icon"></i>
+                            Front-End Developer
                         </p>
-                        <hr />
-                    </div>
 
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012
-                        </h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <br />
+                        <p>
+                            <i class="fa fa-home detail-icon"></i>
+                            Kigali, Rwanda
+                        </p>
+
+                        <p>
+                            <i class="fa fa-envelope detail-icon"></i>
+                            angemarquisei@gmail.com
+                        </p>
+
+                        <p>
+                            <i class="fa fa-phone detail-icon"></i>
+                            +250 793 164 575
+                        </p>
+
+                        <hr class="section-divider">
+
+                        <p class="section-subtitle">
+                            <b>
+                                <i class="fa fa-asterisk detail-icon"></i>
+                                Skills
+                            </b>
+                        </p>
+
+                        <!-- Skills -->
+
+                        <div class="skill-group">
+                            <p>C Programming</p>
+
+                            <div class="progress-track">
+                                <div class="progress-bar" style="width:80%">
+                                    80%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <p>HTML</p>
+
+                            <div class="progress-track">
+                                <div class="progress-bar" style="width:75%">
+                                    75%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <p>CSS</p>
+
+                            <div class="progress-track">
+                                <div class="progress-bar" style="width:65%">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <p>JavaScript</p>
+
+                            <div class="progress-track">
+                                <div class="progress-bar" style="width:50%">
+                                    50%
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <hr class="section-divider">
+
+                        <!-- Languages -->
+
+                        <p class="section-subtitle">
+                            <b>
+                                <i class="fa fa-globe detail-icon"></i>
+                                Languages
+                            </b>
+                        </p>
+
+                        <div class="language-group">
+                            <p>English</p>
+
+                            <div class="progress-track">
+                                <div class="progress-bar no-text" style="width:90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="language-group">
+                            <p>Kinyarwanda</p>
+
+                            <div class="progress-track">
+                                <div class="progress-bar no-text" style="width:80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="language-group">
+                            <p>French</p>
+
+                            <div class="progress-track">
+                                <div class="progress-bar no-text" style="width:40%"></div>
+                            </div>
+                        </div>
+
+                        <br>
+
                     </div>
                 </div>
 
-                <!-- Education -->
-                <div class="w3-container w3-card w3-white">
-                    <h2 class="w3-text-grey w3-padding-16">
-                        <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+            </aside>
+
+            <!-- RIGHT SIDE -->
+
+            <main class="right-column">
+
+                <!-- WORK EXPERIENCE -->
+
+                <section class="content-block shadow-card">
+
+                    <h2 class="main-title">
+                        <i class="fa fa-suitcase title-icon"></i>
+                        Work Experience
                     </h2>
 
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-                        <p>Web Development! All I need to know in one place.</p>
-                        <hr />
+                    <div class="timeline-block">
+
+                        <h5 class="position-title">
+                            <b>Front end developer/student</b>
+                        </h5>
+
+                        <h6 class="date-range">
+                            <i class="fa fa-calendar detail-icon"></i>
+                            Jan 2025 -
+                            <span class="badge">Current</span>
+                        </h6>
+
+                        <p>
+                            Lead overall business strategy, regional tour logistics,
+                            and promotional campaigns.
+                        </p>
+
+                        <hr class="item-divider">
+
                     </div>
 
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>London Business School</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-                        <p>Master Degree</p>
-                        <hr />
+                    <div class="timeline-block">
+
+                        <h5 class="position-title">
+                            <b>digital marketing / Noirframe</b>
+                        </h5>
+
+                        <h6 class="date-range">
+                            <i class="fa fa-calendar detail-icon"></i>
+                            Aug 2024 - Jan 2025
+                        </h6>
+
+                        <p>
+                            Worked on branding concepts and digital design for small projects
+                        </p>
+
+                        <hr class="item-divider">
+
                     </div>
 
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>School of Coding</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-                        <p>Bachelor Degree</p>
-                        <br />
+                    <div class="timeline-block">
+
+                        <h5 class="position-title">
+                            <b>Academic Projects Coordinator</b>
+                        </h5>
+
+                        <h6 class="date-range">
+                            <i class="fa fa-calendar detail-icon"></i>
+                            Feb 2025 - Jul 2025
+                        </h6>
+
+                        <p>
+                            Handled team communications and task tracking.Built experience in entrepreneurship
+                            and creative problem solving.
+                        </p>
+
                     </div>
-                </div>
 
-            </div><!-- End Right Column -->
+                </section>
 
-        </div><!-- End Grid -->
+                <!-- EDUCATION -->
 
-        <!-- Footer -->
-        <footer class="w3-container w3-teal w3-center w3-margin-top w3-padding-16">
-            <p>Find me on social media.</p>
-            <a href="#"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-            <a href="#"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-            <a href="#"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-            <a href="#"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-            <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-        </footer>
+                <section class="content-block shadow-card">
 
-    </div><!-- End Page Container -->
+                    <h2 class="main-title">
+                        <i class="fa fa-graduation-cap title-icon"></i>
+                        Education
+                    </h2>
+
+                    <div class="timeline-block">
+
+                        <h5 class="position-title">
+                            <b>Adventist University of Central Africa (AUCA) </b>
+                            <h5>Bachelor of Information Management</h5>
+                        </h5>
+
+                        <h6 class="date-range">
+                            <i class="fa fa-calendar detail-icon"></i>
+                            2025 - Present
+                        </h6>
+
+                        <p>
+                            Studying core IT subjects including programming, web development, and systems
+                            Actively applying knowledge in real-world projects. Pursuing undergraduate coursework in
+                            Information Management.
+                        </p>
+
+                        <hr class="item-divider">
+
+                    </div>
+
+                    <div class="timeline-block">
+
+                        <h5 class="position-title">
+                            <b>Advanced Secondary Education School</b>
+                        </h5>
+
+                        <h6 class="date-range">
+                            <i class="fa fa-calendar detail-icon"></i>
+                            Graduated 2024
+                        </h6>
+
+                        <p>
+                            Completed secondary education with focus on science and technology foundation.
+                        </p>
+
+                    </div>
+
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <p>Find me on social media.</p>
+
+        <div class="social-links">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p class="credit-text">
+            Designed Ange Marquise
+        </p>
+
+    </footer>
 
 </body>
 
