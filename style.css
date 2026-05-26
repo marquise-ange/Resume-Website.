@@ -9,7 +9,6 @@
 }
 
 /* RESET */
-
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +16,6 @@
 }
 
 /* BODY */
-
 body {
     font-family: "Inter", sans-serif;
     background-color: var(--bg-main);
@@ -26,36 +24,36 @@ body {
 }
 
 /* PAGE */
-
 .page-container {
     max-width: 1400px;
     margin: 20px auto 0 auto;
     padding: 0 16px;
 }
 
-/* GRID */
-
+/* GRID & ALIGNMENT FIX */
 .resume-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 16px;
-    align-items: start;
+    align-items: stretch;
+    /* Stretches columns to equal height to eliminate the bottom gap */
 }
 
 /* LEFT COLUMN */
-
 .left-column {
     width: 100%;
 }
 
-/* RIGHT COLUMN */
-
+/* RIGHT COLUMN FIX */
 .right-column {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* Spaces the Work Experience and Education blocks perfectly */
 }
 
 /* PROFILE CARD */
-
 .profile-card {
     background-color: var(--card-white);
     border-radius: 4px;
@@ -63,12 +61,12 @@ body {
     overflow: hidden;
 }
 
-/* IMAGE */
-
+/* IMAGE ENHANCEMENTS & RESPONSIVENESS */
 .image-container {
     position: relative;
     width: 100%;
-    height: 320px;
+    height: 360px;
+    /* Boosted slightly to give your image an open, striking look */
     overflow: hidden;
     background-color: var(--color-primary);
 }
@@ -78,10 +76,11 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center top;
+    /* Boosts image lighting and contrast natively in the browser */
+    filter: brightness(1.18) contrast(1.04) saturate(1.05);
 }
 
 /* NAME OVERLAY */
-
 .name-overlay {
     position: absolute;
     bottom: 0;
@@ -98,7 +97,6 @@ body {
 }
 
 /* PROFILE DETAILS */
-
 .profile-details {
     padding: 16px;
 }
@@ -110,7 +108,6 @@ body {
 }
 
 /* ICONS */
-
 .detail-icon {
     margin-right: 16px;
     color: var(--color-primary);
@@ -119,7 +116,6 @@ body {
 }
 
 /* DIVIDER */
-
 .section-divider {
     border: 0;
     border-top: 1px solid var(--border-light);
@@ -127,14 +123,12 @@ body {
 }
 
 /* SECTION TITLE */
-
 .section-subtitle {
     font-size: 18px;
     margin-bottom: 16px;
 }
 
 /* SKILLS */
-
 .skill-group,
 .language-group {
     margin-bottom: 12px;
@@ -147,7 +141,6 @@ body {
 }
 
 /* PROGRESS BAR */
-
 .progress-track {
     background-color: #f1f5f9;
     border-radius: 16px;
@@ -169,7 +162,6 @@ body {
 }
 
 /* LANGUAGE BAR */
-
 .language-group .progress-track {
     height: 24px;
 }
@@ -178,23 +170,50 @@ body {
     height: 24px;
 }
 
-/* RIGHT SIDE CONTENT */
-
+/* RIGHT SIDE CONTENT - GAP FIX */
 .content-block {
     background-color: var(--card-white);
     padding: 16px;
-    margin-bottom: 16px;
     border-radius: 4px;
 }
 
-/* SHADOW */
+/* Tells the Education block to seamlessly expand and absorb the remaining height */
+.right-column section:last-child {
+    flex-grow: 1;
+    margin-bottom: 0;
+}
 
+/* EDUCATION EXTRA SECTION */
+
+.education-extra {
+    margin-top: 16px;
+    /* Adds space above each sub-item block */
+    padding-left: 4px;
+    /* Slightly indents them for clean hierarchy */
+}
+
+.education-extra .extra-title {
+    font-size: 13px;
+    color: var(--color-accent);
+    margin-bottom: 6px;
+    /* Spaces title from its paragraph */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.education-extra .extra-text {
+    font-size: 14px;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* SHADOW */
 .shadow-card {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* MAIN TITLES */
-
 .main-title {
     color: var(--text-light);
     font-size: 30px;
@@ -205,21 +224,18 @@ body {
 }
 
 /* TITLE ICON */
-
 .title-icon {
     margin-right: 16px;
     color: var(--color-primary);
 }
 
 /* TIMELINE */
-
 .timeline-block {
     padding: 0 16px;
     margin-bottom: 16px;
 }
 
 /* POSITION TITLE */
-
 .position-title {
     font-size: 15px;
     color: #1e293b;
@@ -228,7 +244,6 @@ body {
 }
 
 /* DATE */
-
 .date-range {
     color: var(--color-primary);
     font-size: 14px;
@@ -238,7 +253,6 @@ body {
 }
 
 /* BADGE */
-
 .badge {
     background-color: var(--color-primary);
     color: #ffffff;
@@ -249,14 +263,12 @@ body {
 }
 
 /* PARAGRAPH */
-
 .timeline-block p {
     font-size: 14px;
     color: var(--text-dark);
 }
 
 /* ITEM DIVIDER */
-
 .item-divider {
     border: 0;
     border-top: 1px solid var(--border-light);
@@ -264,7 +276,6 @@ body {
 }
 
 /* FOOTER */
-
 .site-footer {
     background-color: var(--color-primary);
     color: #ffffff;
@@ -296,7 +307,7 @@ body {
 }
 
 /* =========================
-   RESPONSIVE DESIGN (BOTTOM)
+   RESPONSIVE DESIGN (UPDATED)
    ========================= */
 
 @media (max-width: 1024px) {
@@ -305,7 +316,7 @@ body {
     }
 
     .image-container {
-        height: 280px;
+        height: 320px;
     }
 
     .main-title {
@@ -319,7 +330,7 @@ body {
     }
 
     .image-container {
-        height: 240px;
+        height: 500px;
     }
 
     .main-title {
